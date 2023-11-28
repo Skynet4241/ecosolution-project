@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   padding: 36px 0;
+  position: fixed;
+  width: 100%;
 `;
 
 export const HeaderWrap = styled.div`

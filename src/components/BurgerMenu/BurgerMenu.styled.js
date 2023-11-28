@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const BlurBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(2px);
+  z-index: ${(props) => (props.isOpen ? 2 : -1)};
+  display: ${(props) => (props.isOpen ? "block" : "none")};
+`;
+
 export const MenuWrap = styled.div`
   display: flex;
   justify-content: space-between;
@@ -16,10 +30,10 @@ export const MenuWrap = styled.div`
   top: 36px;
   right: 50%;
   transform: translateX(50%);
-  z-index: 1;
+  z-index: 10;
   @media screen and (min-width: calc(768px - 0.02px)) {
     width: 365px;
-    height: 873px;
+    height: 90%;
     top: 30px;
     right: 30px;
     transform: none;

@@ -36,6 +36,7 @@ export const FooterArrowButton = styled.button`
   height: 32px;
   width: 32px;
   transition: all 0.2s ease-in;
+  z-index: -1;
   &:hover,
   &:focus {
     background-color: #ee763d;

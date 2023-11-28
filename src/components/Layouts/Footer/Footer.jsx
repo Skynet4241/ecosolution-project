@@ -54,7 +54,6 @@ const Footer = () => {
               </FooterArrowButton>
             </FooterButtonWrap>
           </FooterLogoWrap>
-
           <FooterInfoBlock>
             <FooterInfoText>
               79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
