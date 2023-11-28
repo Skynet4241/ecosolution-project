@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
-  padding: 36px 0;
-`;
-
-export const LogoBlock = styled.div`
+export const LogoBlockStyled = styled.div`
   display: flex;
   align-items: center;
   gap: 4px;
+  width: 288px;
 `;
 
 export const Logo = styled.svg`
