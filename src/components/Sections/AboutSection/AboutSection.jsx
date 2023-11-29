@@ -4,6 +4,7 @@ import {
   AboutCompanyText,
   AboutCompanyTextSpan,
   AboutCompanyTitle,
+  AboutCompanyTitleWrap,
   AboutSectionWrap,
   CompanyManagementImg,
   CompanyManagementList,
@@ -38,9 +39,11 @@ const AboutSection = () => {
       <Container>
         <AboutSectionWrap>
           <AboutCompanyBlock>
-            <AboutCompanyTitle>
-              LET’s start with small start with ourselves
-            </AboutCompanyTitle>
+            <AboutCompanyTitleWrap>
+              <AboutCompanyTitle>
+                LET’s start with small start with ourselves
+              </AboutCompanyTitle>
+            </AboutCompanyTitleWrap>
             <VerticalGreenLine></VerticalGreenLine>
             <AboutCompanyText>
               <AboutCompanyTextSpan>ECOSOLUTION</AboutCompanyTextSpan> is the
@@ -99,7 +102,11 @@ const AboutSection = () => {
           </div>
           <GreenLine></GreenLine>
           <CompanyValuesBlock>
-            <CompanyValuesTitle>Main values of our company</CompanyValuesTitle>
+            <AboutCompanyTitleWrap>
+              <CompanyValuesTitle>
+                Main values of our company
+              </CompanyValuesTitle>
+            </AboutCompanyTitleWrap>
             <VerticalGreenLine></VerticalGreenLine>
             <CompanyValuesText>
               EcoSolution envisions a world where sustainable energy solutions

@@ -18,7 +18,13 @@ export const AboutCompanyBlock = styled.div`
   @media screen and (min-width: calc(768px - 0.02px)) {
     flex-direction: row-reverse;
     gap: 0;
+    justify-content: space-between;
   }
+`;
+
+export const AboutCompanyTitleWrap = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const AboutCompanyTitle = styled.h2`
@@ -27,10 +33,11 @@ export const AboutCompanyTitle = styled.h2`
   font-size: 28px;
   line-height: 28px;
   text-transform: uppercase;
+  width: 320px;
   @media screen and (min-width: calc(768px - 0.02px)) {
     font-size: 36px;
     line-height: 36px;
-    width: calc(100% / 2);
+    width: 340px;
   }
 `;
 
@@ -44,6 +51,9 @@ export const VerticalGreenLine = styled.span`
     flex-shrink: 0;
     background-color: #97d28b;
     margin-right: 11px;
+    @media screen and (min-width: calc(1280px - 0.02px)) {
+      margin-right: 161px;
+    }
   }
 `;
 
@@ -56,8 +66,11 @@ export const AboutCompanyText = styled.p`
   text-align: justify;
   @media screen and (min-width: calc(768px - 0.02px)) {
     display: block;
-    width: calc(100% / 2);
+    width: 485px;
     margin-right: 65px;
+  }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    margin-right: 134px;
   }
 `;
 
@@ -74,12 +87,19 @@ export const CompanyManagementList = styled.ul`
   gap: 24px;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    gap: 0;
+  }
 `;
 
 export const CompanyManagementImg = styled.img`
   width: 148px;
   height: 168px;
   object-fit: cover;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    width: 248px;
+    height: 268px;
+  }
 `;
 
 export const CompanyManagementName = styled.h6`
@@ -90,6 +110,10 @@ export const CompanyManagementName = styled.h6`
   letter-spacing: -0.72px;
   margin-top: 8px;
   margin-bottom: 2px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    margin-top: 12px;
+    margin-bottom: 2px;
+  }
 `;
 
 export const CompanyManagementPosition = styled.p`
@@ -118,6 +142,7 @@ export const CompanyValuesBlock = styled.div`
   @media screen and (min-width: calc(768px - 0.02px)) {
     flex-direction: row;
     gap: 0;
+    justify-content: space-between;
   }
 `;
 
@@ -131,7 +156,10 @@ export const CompanyValuesTitle = styled.h2`
     margin-right: 82px;
     font-size: 36px;
     line-height: 36px;
-    width: calc(100% / 2);
+    width: 280px;
+    @media screen and (min-width: calc(1280px - 0.02px)) {
+      margin-right: 254px;
+    }
   }
 `;
 
@@ -150,7 +178,8 @@ export const KeyPrinciplesWrap = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  @media screen and (min-width: calc(768px - 0.02px)) {
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    gap: 48px;
   }
 `;
 
@@ -160,6 +189,9 @@ export const KeyPrinciplesBlock = styled.div`
   gap: 24px;
   @media screen and (min-width: calc(768px - 0.02px)) {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    gap: 48px;
   }
 `;
 
@@ -173,6 +205,10 @@ export const KeyPrinciplesCard = styled.div`
   @media screen and (min-width: calc(768px - 0.02px)) {
     padding-top: 12px;
   }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    height: 339px;
+    padding: 48px 24px;
+  }
 `;
 
 export const KeyPrinciplesImg = styled.img`
@@ -180,9 +216,12 @@ export const KeyPrinciplesImg = styled.img`
 
   @media screen and (min-width: calc(768px - 0.02px)) {
     display: block;
-    height: auto;
+    height: 100%;
     max-height: 197px;
     object-fit: cover;
+  }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    max-height: 339px;
   }
 `;
 
@@ -191,6 +230,10 @@ export const KeyPrinciplesCardBlock = styled.div`
   align-items: center;
   gap: 8px;
   margin-bottom: 33px;
+  box-sizing: border-box;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    margin-bottom: 94px;
+  }
 `;
 
 export const KeyPrinciplesCardSVG = styled.svg`
@@ -198,6 +241,10 @@ export const KeyPrinciplesCardSVG = styled.svg`
   height: 16px;
   fill: transparent;
   stroke: rgba(23, 61, 51, 1);
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 export const KeyPrinciplesCardTitle = styled.h5`
@@ -206,6 +253,14 @@ export const KeyPrinciplesCardTitle = styled.h5`
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @media screen and (min-width: calc(1440px - 0.02px)) {
+    font-size: 32px;
+    line-height: 48px;
+  }
 `;
 
 export const KeyPrinciplesCardSpan = styled.span`
@@ -214,6 +269,9 @@ export const KeyPrinciplesCardSpan = styled.span`
   flex-shrink: 0;
   background-color: #97d28b;
   margin-bottom: 12px;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const KeyPrinciplesCardText = styled.p`
@@ -223,4 +281,7 @@ export const KeyPrinciplesCardText = styled.p`
   font-size: 14px;
   line-height: normal;
   letter-spacing: -0.56px;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    font-size: 16px;
+  }
 `;
