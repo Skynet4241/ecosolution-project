@@ -138,6 +138,8 @@ export const ServiceSectionCardTitle = styled.h3`
 `;
 
 export const EnergySourcesWrap = styled.div`
+  display: flex;
+  justify-content: center;
   width: 322px;
   background-image: url(${EnergyImg});
   background-size: contain;
@@ -157,7 +159,7 @@ export const EnergySourcesWrap = styled.div`
 export const EnergySourcesList = styled.ul`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100px;
   gap: 16px;
 `;
 
