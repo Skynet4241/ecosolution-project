@@ -20,6 +20,7 @@ export const FooterLogoWrap = styled.div`
 export const FooterButtonWrap = styled.div`
   display: flex;
   justify-content: flex-end;
+
   @media screen and (min-width: calc(768px - 0.02px)) {
     width: 129px;
   }
@@ -36,7 +37,7 @@ export const FooterArrowButton = styled.button`
   height: 32px;
   width: 32px;
   transition: all 0.2s ease-in;
-  z-index: -1;
+
   &:hover,
   &:focus {
     background-color: #ee763d;
@@ -52,6 +53,7 @@ export const FooterArrowButtonSVG = styled.svg`
   width: 16px;
   height: 16px;
 `;
+
 export const FooterSocialLinkSVG = styled.svg`
   fill: rgba(23, 61, 51, 1);
   stroke: rgba(23, 61, 51, 1);

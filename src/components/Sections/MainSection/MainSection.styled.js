@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const HeroSectionStyled = styled.section`
-  padding: 110px 0 24px;
+export const MainSectionStyled = styled.div`
+  padding: 222px 0 24px;
 `;
 
-export const HeroSectionWrap = styled.div`
+export const MainSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -12,7 +12,7 @@ export const HeroSectionWrap = styled.div`
   }
 `;
 
-export const HeroSectionBlockInfo = styled.div`
+export const MainSectionBlockInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -22,7 +22,7 @@ export const HeroSectionBlockInfo = styled.div`
   }
 `;
 
-export const HeroSectionTitle = styled.h1`
+export const MainSectionTitle = styled.h1`
   color: #173d33;
   font-family: Oswald;
   font-size: 36px;
@@ -41,7 +41,7 @@ export const HeroSectionTitle = styled.h1`
     width: 485px;
   }
 `;
-export const HeroSectionTextWrap = styled.div`
+export const MainSectionTextWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -50,7 +50,7 @@ export const HeroSectionTextWrap = styled.div`
   }
 `;
 
-export const HeroSectionText = styled.p`
+export const MainSectionText = styled.p`
   max-width: 620px;
   color: #173d33;
   text-align: justify;
@@ -66,7 +66,7 @@ export const HeroSectionText = styled.p`
   }
 `;
 
-export const HeroSectionButton = styled.button`
+export const MainSectionButton = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@ export const HeroSectionButton = styled.button`
   }
 `;
 
-export const HeroSectionButtonSVG = styled.svg`
+export const MainSectionButtonSVG = styled.svg`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,13 +103,13 @@ export const HeroSectionButtonSVG = styled.svg`
   fill: transparent;
 `;
 
-export const HeroSectionGreenLine = styled.span`
+export const MainSectionGreenLine = styled.span`
   height: 1px;
   flex-shrink: 0;
   background-color: #97d28b;
 `;
 
-export const HeroSectionAddressBlock = styled.div`
+export const MainSectionAddressBlock = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,7 +120,7 @@ export const HeroSectionAddressBlock = styled.div`
   }
 `;
 
-export const HeroSectionAddress = styled.p`
+export const MainSectionAddress = styled.p`
   color: #173d33;
   font-family: FiraSans-Regular;
   font-size: 16px;
@@ -128,7 +128,7 @@ export const HeroSectionAddress = styled.p`
   letter-spacing: -0.64px;
 `;
 
-export const HeroSectionAddressLink = styled.a`
+export const MainSectionAddressLink = styled.a`
   color: #173d33;
   font-family: FiraSans-Regular;
   font-size: 16px;
@@ -141,7 +141,7 @@ export const HeroSectionAddressLink = styled.a`
   }
 `;
 
-export const HeroSectionAddressCopyright = styled.p`
+export const MainSectionAddressCopyright = styled.p`
   display: none;
 
   @media screen and (min-width: calc(768px - 0.02px)) {
@@ -154,7 +154,7 @@ export const HeroSectionAddressCopyright = styled.p`
   }
 `;
 
-export const HeroSectionImage = styled.img`
+export const MainSectionImage = styled.img`
   height: 316px;
   flex-shrink: 0;
   object-fit: cover;
