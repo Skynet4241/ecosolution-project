@@ -30,7 +30,9 @@ export const AboutCompanyBlock = styled.div`
 
 export const AboutCompanyTitleWrap = styled.div`
   display: flex;
-  justify-content: flex-end;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    justify-content: flex-end;
+  }
 `;
 
 export const AboutCompanyTitle = styled.h2`
@@ -158,6 +160,7 @@ export const CompanyValuesTitle = styled.h2`
   font-size: 28px;
   line-height: 28px;
   text-transform: uppercase;
+  width: 320px;
   @media screen and (min-width: calc(768px - 0.02px)) {
     margin-right: 82px;
     font-size: 36px;
