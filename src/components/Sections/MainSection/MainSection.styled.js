@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const MainSectionStyled = styled.div`
   padding: 222px 0 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding-bottom: 100px;
+  }
 `;
 
 export const MainSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  @media screen and (min-width: calc(768px - 0.02px)) {
-  }
 `;
 
 export const MainSectionBlockInfo = styled.div`

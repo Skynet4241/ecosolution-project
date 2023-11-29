@@ -5,12 +5,20 @@ export const AboutSectionWrap = styled.div`
   flex-direction: column;
   gap: 36px;
   padding-bottom: 36px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding-bottom: 100px;
+    gap: 100px;
+  }
 `;
 
 export const AboutCompanyBlock = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
 `;
 
 export const AboutCompanyTitle = styled.h2`
@@ -19,6 +27,24 @@ export const AboutCompanyTitle = styled.h2`
   font-size: 28px;
   line-height: 28px;
   text-transform: uppercase;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    font-size: 36px;
+    line-height: 36px;
+    width: calc(100% / 2);
+  }
+`;
+
+export const VerticalGreenLine = styled.span`
+  display: none;
+
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    display: block;
+    width: 1px;
+    height: auto;
+    flex-shrink: 0;
+    background-color: #97d28b;
+    margin-right: 11px;
+  }
 `;
 
 export const AboutCompanyText = styled.p`
@@ -28,6 +54,11 @@ export const AboutCompanyText = styled.p`
   line-height: normal;
   letter-spacing: -0.64px;
   text-align: justify;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    display: block;
+    width: calc(100% / 2);
+    margin-right: 65px;
+  }
 `;
 
 export const AboutCompanyTextSpan = styled.span`
@@ -75,12 +106,19 @@ export const GreenLine = styled.span`
   flex-shrink: 0;
   background-color: #97d28b;
   margin: -20px 0 -17px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    display: none;
+  }
 `;
 
 export const CompanyValuesBlock = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    flex-direction: row;
+    gap: 0;
+  }
 `;
 
 export const CompanyValuesTitle = styled.h2`
@@ -89,6 +127,12 @@ export const CompanyValuesTitle = styled.h2`
   font-size: 28px;
   line-height: 28px;
   text-transform: uppercase;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    margin-right: 82px;
+    font-size: 36px;
+    line-height: 36px;
+    width: calc(100% / 2);
+  }
 `;
 
 export const CompanyValuesText = styled.p`
@@ -98,12 +142,25 @@ export const CompanyValuesText = styled.p`
   font-size: 16px;
   line-height: normal;
   letter-spacing: -0.64px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    width: calc(100% / 2);
+  }
+`;
+export const KeyPrinciplesWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+  }
 `;
 
 export const KeyPrinciplesBlock = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const KeyPrinciplesCard = styled.div`
@@ -112,6 +169,21 @@ export const KeyPrinciplesCard = styled.div`
   background-color: #eaedf1;
   height: 197px;
   padding: 13px 12px;
+  box-sizing: border-box;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding-top: 12px;
+  }
+`;
+
+export const KeyPrinciplesImg = styled.img`
+  display: none;
+
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    display: block;
+    height: auto;
+    max-height: 197px;
+    object-fit: cover;
+  }
 `;
 
 export const KeyPrinciplesCardBlock = styled.div`

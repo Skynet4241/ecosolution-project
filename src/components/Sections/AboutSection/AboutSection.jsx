@@ -1,8 +1,4 @@
 import { Container } from "../../../utils/Container/Container";
-import AboutSectionFotoOne from "../../../assets/images/about-section-foto-1.png";
-import AboutSectionFotoTwo from "../../../assets/images/about-section-foto-2.png";
-import AboutSectionFotoThree from "../../../assets/images/about-section-foto-3.png";
-import AboutSectionFotoFour from "../../../assets/images/about-section-foto-4.png";
 import {
   AboutCompanyBlock,
   AboutCompanyText,
@@ -24,8 +20,17 @@ import {
   KeyPrinciplesCardSpan,
   KeyPrinciplesCardText,
   KeyPrinciplesCardTitle,
+  KeyPrinciplesImg,
+  KeyPrinciplesWrap,
+  VerticalGreenLine,
 } from "./AboutSection.styled";
 import icons from "../../../assets/icons/icons.svg";
+import AboutSectionFotoOne from "../../../assets/images/about-section-foto-1.png";
+import AboutSectionFotoTwo from "../../../assets/images/about-section-foto-2.png";
+import AboutSectionFotoThree from "../../../assets/images/about-section-foto-3.png";
+import AboutSectionFotoFour from "../../../assets/images/about-section-foto-4.png";
+import KeyPrinciplesImgOne from "../../../assets/images/key-principles-1.png";
+import KeyPrinciplesImgTwo from "../../../assets/images/key-principles-2.png";
 
 const AboutSection = () => {
   return (
@@ -36,6 +41,7 @@ const AboutSection = () => {
             <AboutCompanyTitle>
               LET’s start with small start with ourselves
             </AboutCompanyTitle>
+            <VerticalGreenLine></VerticalGreenLine>
             <AboutCompanyText>
               <AboutCompanyTextSpan>ECOSOLUTION</AboutCompanyTextSpan> is the
               largest group of companies in Western Ukraine, which is engaged in
@@ -94,6 +100,7 @@ const AboutSection = () => {
           <GreenLine></GreenLine>
           <CompanyValuesBlock>
             <CompanyValuesTitle>Main values of our company</CompanyValuesTitle>
+            <VerticalGreenLine></VerticalGreenLine>
             <CompanyValuesText>
               EcoSolution envisions a world where sustainable energy solutions
               power a brighter and cleaner future for all. We aspire to be at
@@ -102,58 +109,73 @@ const AboutSection = () => {
               of nature to meet the world`s energy needs.
             </CompanyValuesText>
           </CompanyValuesBlock>
-          <KeyPrinciplesBlock>
-            <KeyPrinciplesCard>
-              <KeyPrinciplesCardBlock>
-                <KeyPrinciplesCardSVG>
-                  <use href={icons + "#icon-maximize-circle"} />
-                </KeyPrinciplesCardSVG>
-                <KeyPrinciplesCardTitle>Openness</KeyPrinciplesCardTitle>
-              </KeyPrinciplesCardBlock>
-              <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
-              <KeyPrinciplesCardText>
-                to the world, people, new ideas and projects
-              </KeyPrinciplesCardText>
-            </KeyPrinciplesCard>
-            <KeyPrinciplesCard>
-              <KeyPrinciplesCardBlock>
-                <KeyPrinciplesCardSVG>
-                  <use href={icons + "#icon-global-edit"} />
-                </KeyPrinciplesCardSVG>
-                <KeyPrinciplesCardTitle>Responsibility</KeyPrinciplesCardTitle>
-              </KeyPrinciplesCardBlock>
-              <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
-              <KeyPrinciplesCardText>
-                we are aware that the results of our work have an impact on our
-                lives and the lives of future generations
-              </KeyPrinciplesCardText>
-            </KeyPrinciplesCard>
-            <KeyPrinciplesCard>
-              <KeyPrinciplesCardBlock>
-                <KeyPrinciplesCardSVG>
-                  <use href={icons + "#icon-cpu-charge"} />
-                </KeyPrinciplesCardSVG>
-                <KeyPrinciplesCardTitle>Innovation</KeyPrinciplesCardTitle>
-              </KeyPrinciplesCardBlock>
-              <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
-              <KeyPrinciplesCardText>
-                we use the latest technology to implement non-standard solutions
-              </KeyPrinciplesCardText>
-            </KeyPrinciplesCard>
-            <KeyPrinciplesCard>
-              <KeyPrinciplesCardBlock>
-                <KeyPrinciplesCardSVG>
-                  <use href={icons + "#icon-ranking"} />
-                </KeyPrinciplesCardSVG>
-                <KeyPrinciplesCardTitle>Quality</KeyPrinciplesCardTitle>
-              </KeyPrinciplesCardBlock>
-              <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
-              <KeyPrinciplesCardText>
-                we do not strive to be the first among others, but we want to be
-                the best in our business
-              </KeyPrinciplesCardText>
-            </KeyPrinciplesCard>
-          </KeyPrinciplesBlock>
+          <KeyPrinciplesWrap>
+            <KeyPrinciplesBlock>
+              <KeyPrinciplesCard>
+                <KeyPrinciplesCardBlock>
+                  <KeyPrinciplesCardSVG>
+                    <use href={icons + "#icon-maximize-circle"} />
+                  </KeyPrinciplesCardSVG>
+                  <KeyPrinciplesCardTitle>Openness</KeyPrinciplesCardTitle>
+                </KeyPrinciplesCardBlock>
+                <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
+                <KeyPrinciplesCardText>
+                  to the world, people, new ideas and projects
+                </KeyPrinciplesCardText>
+              </KeyPrinciplesCard>
+              <KeyPrinciplesCard>
+                <KeyPrinciplesCardBlock>
+                  <KeyPrinciplesCardSVG>
+                    <use href={icons + "#icon-global-edit"} />
+                  </KeyPrinciplesCardSVG>
+                  <KeyPrinciplesCardTitle>
+                    Responsibility
+                  </KeyPrinciplesCardTitle>
+                </KeyPrinciplesCardBlock>
+                <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
+                <KeyPrinciplesCardText>
+                  we are aware that the results of our work have an impact on
+                  our lives and the lives of future generations
+                </KeyPrinciplesCardText>
+              </KeyPrinciplesCard>
+            </KeyPrinciplesBlock>
+            <KeyPrinciplesImg
+              src={KeyPrinciplesImgOne}
+              alt="Wind farms fields"
+            />
+            <KeyPrinciplesImg
+              src={KeyPrinciplesImgTwo}
+              alt="Man worker field by solar panels"
+            />
+            <KeyPrinciplesBlock>
+              <KeyPrinciplesCard>
+                <KeyPrinciplesCardBlock>
+                  <KeyPrinciplesCardSVG>
+                    <use href={icons + "#icon-cpu-charge"} />
+                  </KeyPrinciplesCardSVG>
+                  <KeyPrinciplesCardTitle>Innovation</KeyPrinciplesCardTitle>
+                </KeyPrinciplesCardBlock>
+                <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
+                <KeyPrinciplesCardText>
+                  we use the latest technology to implement non-standard
+                  solutions
+                </KeyPrinciplesCardText>
+              </KeyPrinciplesCard>
+              <KeyPrinciplesCard>
+                <KeyPrinciplesCardBlock>
+                  <KeyPrinciplesCardSVG>
+                    <use href={icons + "#icon-ranking"} />
+                  </KeyPrinciplesCardSVG>
+                  <KeyPrinciplesCardTitle>Quality</KeyPrinciplesCardTitle>
+                </KeyPrinciplesCardBlock>
+                <KeyPrinciplesCardSpan></KeyPrinciplesCardSpan>
+                <KeyPrinciplesCardText>
+                  we do not strive to be the first among others, but we want to
+                  be the best in our business
+                </KeyPrinciplesCardText>
+              </KeyPrinciplesCard>
+            </KeyPrinciplesBlock>
+          </KeyPrinciplesWrap>
         </AboutSectionWrap>
       </Container>
     </div>
