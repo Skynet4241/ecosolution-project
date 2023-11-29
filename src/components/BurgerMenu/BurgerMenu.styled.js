@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const BlurBackground = styled.div`
+export const BlurBackground = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "isOpen",
+})`
   position: fixed;
   top: 0;
   left: 0;

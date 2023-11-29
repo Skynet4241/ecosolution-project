@@ -181,9 +181,9 @@ export const EnergySourcesListItemSVG = styled.svg`
 `;
 
 export const EnergySourcesListButton = styled.button.withConfig({
-  shouldForwardProp: (prop) => prop !== "active",
+  shouldForwardProp: (prop) => prop !== "isActive",
 })`
-  color: ${(props) => (props.active ? "#97D28B" : "#173d33")};
+  color: ${(props) => (props.isActive ? "#97D28B" : "#173d33")};
   text-align: justify;
   font-family: FiraSans-Regular;
   font-size: 20px;

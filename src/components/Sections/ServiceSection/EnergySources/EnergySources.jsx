@@ -109,7 +109,7 @@ const EnergySources = () => {
             <li key={index}>
               <EnergySourcesListButton
                 onClick={() => handleEnergySourceClick(index)}
-                active={index === isActive}
+                isActive={index === isActive}
               >
                 <EnergySourcesListItemBlock>
                   {isActive === index && (
