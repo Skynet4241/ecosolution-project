@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
+export const AboutSectionStyled = styled.div`
+  padding-bottom: 36px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding-bottom: 100px;
+  }
+`;
+
 export const AboutSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 36px;
-  padding-bottom: 36px;
+
   @media screen and (min-width: calc(768px - 0.02px)) {
-    padding-bottom: 100px;
     gap: 100px;
   }
 `;

@@ -5,6 +5,7 @@ import {
   AboutCompanyTextSpan,
   AboutCompanyTitle,
   AboutCompanyTitleWrap,
+  AboutSectionStyled,
   AboutSectionWrap,
   CompanyManagementImg,
   CompanyManagementList,
@@ -35,7 +36,7 @@ import KeyPrinciplesImgTwo from "../../../assets/images/key-principles-2.png";
 
 const AboutSection = () => {
   return (
-    <div>
+    <AboutSectionStyled>
       <Container>
         <AboutSectionWrap>
           <AboutCompanyBlock>
@@ -185,7 +186,7 @@ const AboutSection = () => {
           </KeyPrinciplesWrap>
         </AboutSectionWrap>
       </Container>
-    </div>
+    </AboutSectionStyled>
   );
 };
 

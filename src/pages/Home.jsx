@@ -1,7 +1,8 @@
 import Footer from "../components/Layouts/Footer/Footer";
 import Header from "../components/Layouts/Header/Header";
-import AboutSection from "../components/Sections/AboutSection/AboutSection";
-import HeroSection from "../components/Sections/MainSection/MainSection";
+import AboutSection from "../components/Sections/AboutSection";
+import HeroSection from "../components/Sections/MainSection";
+import ServiceSection from "../components/Sections/ServiceSection";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <HeroSection />
       <AboutSection />
+      <ServiceSection />
       <Footer />
     </div>
   );
