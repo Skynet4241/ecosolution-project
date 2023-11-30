@@ -174,6 +174,7 @@ export const SwiperSlideInfoBlock = styled.div`
   @media screen and (min-width: calc(1280px - 0.02px)) {
     gap: 24px;
     padding: 48px;
+    height: 188px;
   }
 `;
 
@@ -201,7 +202,7 @@ export const SwiperSlideInfoBlockTitle = styled.h5`
   @media screen and (min-width: calc(1280px - 0.02px)) {
     font-size: 24px;
     width: 350px;
-    min-height: 58px;
+    min-height: 90px;
   }
 `;
 
@@ -241,7 +242,7 @@ export const SwiperSlideSpan = styled.span`
   background-color: #97d28b;
   margin-bottom: -9px;
   @media screen and (min-width: calc(1280px - 0.02px)) {
-    margin-bottom: 0;
+    margin-bottom: -20px;
   }
 `;
 
