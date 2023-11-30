@@ -17,7 +17,9 @@ export const FormInputLabel = styled.label`
   letter-spacing: -0.64px;
 `;
 
-export const FormInput = styled.input`
+export const FormInput = styled.input.withConfig({
+  shouldForwardProp: (prop) => prop !== "errors",
+})`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
