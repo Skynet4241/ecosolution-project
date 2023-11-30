@@ -9,12 +9,17 @@ export const AccordionWrap = styled(Box)`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding-top: 16px;
+    border-top: 1px solid #97d28b;
+  }
 `;
 
 export const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(() => ({
   backgroundColor: "transparent",
+
   "&:not(:last-child)": {
     paddingBottom: "16px",
     borderBottom: "1px solid #97D28B",
@@ -53,7 +58,7 @@ export const AccordionSummary = styled(
 )(() => ({
   backgroundColor: "transparent",
   flexDirection: "row-reverse",
-
+  minHeight: "0",
   "& .MuiAccordionSummary-content": {
     margin: "0 0 0 8px",
   },
@@ -70,6 +75,9 @@ export const SummaryTitle = styled(Typography)`
   font-size: 18px;
   line-height: normal;
   letter-spacing: -0.72px;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    font-size: 24px;
+  }
 `;
 
 export const SummaryTitleText = styled(Typography)`
@@ -79,4 +87,7 @@ export const SummaryTitleText = styled(Typography)`
   font-size: 14px;
   line-height: normal;
   letter-spacing: -0.56px;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    font-size: 16px;
+  }
 `;
