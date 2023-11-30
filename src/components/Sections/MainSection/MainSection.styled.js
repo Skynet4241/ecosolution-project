@@ -83,8 +83,18 @@ export const MainSectionButton = styled.button`
   color: #173d33;
   font-family: FiraSans-Regular;
   font-size: 16px;
-  line-height: 18px; /* 112.5% */
+  line-height: 18px;
   letter-spacing: -0.64px;
+  transition: all 0.2s ease-in;
+  &:hover,
+  &:focus {
+    color: #ee763d;
+    border-color: #ee763d;
+    & > svg {
+      stroke: #fff;
+      background: #ee763d;
+    }
+  }
   @media screen and (min-width: calc(768px - 0.02px)) {
     margin: 0;
   }
@@ -102,6 +112,7 @@ export const MainSectionButtonSVG = styled.svg`
   background: #97d28b;
   stroke: rgba(23, 61, 51, 1);
   fill: transparent;
+  transition: all 0.2s ease-in;
 `;
 
 export const MainSectionGreenLine = styled.span`

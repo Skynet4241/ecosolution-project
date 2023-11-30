@@ -114,11 +114,19 @@ export const FaqSectionButton = styled.button`
   font-family: FiraSans-Regular;
   line-height: normal;
   letter-spacing: -0.64px;
-  @media screen and (min-width: calc(768px - 0.02px)) {
+  transition: all 0.2s ease-in;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #ee763d;
+    & > svg {
+      fill: #fff;
+    }
   }
 `;
 
 export const FaqSectionButtonSVG = styled.svg`
   width: 14px;
   height: 14px;
+  transition: all 0.2s ease-in;
 `;

@@ -105,7 +105,13 @@ export const CustomButton = styled.button`
   border-radius: 100px;
   border: 1px solid #173d33;
   background-color: transparent;
-  @media screen and (min-width: calc(768px - 0.02px)) {
+  transition: all 0.2s ease-in;
+  &:hover,
+  &:focus {
+    border-color: #ee763d;
+    & > svg {
+      stroke: #ee763d;
+    }
   }
 `;
 
@@ -115,8 +121,7 @@ export const CustomButtonSVGLeft = styled.svg`
   transform: rotate(180deg);
   fill: transparent;
   stroke: rgba(23, 61, 51, 1);
-  @media screen and (min-width: calc(768px - 0.02px)) {
-  }
+  transition: all 0.2s ease-in;
 `;
 
 export const CustomButtonSVGRight = styled.svg`
@@ -209,6 +214,14 @@ export const SwiperSlideInfoBlockBtn = styled.button`
   background: #97d28b;
   width: 60px;
   height: 60px;
+  transition: all 0.2s ease-in;
+  &:hover,
+  &:focus {
+    background-color: #ee763d;
+    & > svg {
+      stroke: #fff;
+    }
+  }
 `;
 
 export const SwiperSlideInfoBlockBtnSVG = styled.svg`
@@ -217,6 +230,7 @@ export const SwiperSlideInfoBlockBtnSVG = styled.svg`
   transform: rotate(320deg);
   fill: transparent;
   stroke: rgba(23, 61, 51, 1);
+  transition: all 0.2s ease-in;
 `;
 
 export const SwiperSlideSpan = styled.span`
