@@ -1,0 +1,78 @@
+import styled from "styled-components";
+
+export const FaqSectionStyled = styled.div`
+  padding-bottom: 36px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding-bottom: 100px;
+  }
+`;
+
+export const FaqSectionHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+`;
+
+export const FaqSectionTitle = styled.h2`
+  color: #173d33;
+  font-family: Oswald;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 264px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    width: 400px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+`;
+
+export const FaqSectionGreenLine = styled.span`
+  width: 100%;
+  height: 1px;
+  background-color: #97d28b;
+`;
+
+export const FaqSectionFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 36px;
+`;
+export const FaqSectionFooterTitle = styled.h5`
+  color: #173d33;
+  text-align: justify;
+  font-family: FiraSans-Regular;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.72px;
+`;
+
+export const FaqSectionButton = styled.button`
+  display: inline-flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  border-radius: 500px;
+  background: #97d28b;
+  color: #173d33;
+  font-size: 16px;
+  font-family: FiraSans-Regular;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+  }
+`;
+
+export const FaqSectionButtonSVG = styled.svg`
+  width: 14px;
+  height: 14px;
+`;

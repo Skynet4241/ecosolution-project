@@ -99,7 +99,6 @@ const CaseSection = () => {
       slidesPerView = 1;
   }
 
-  console.log(slidesPerView);
   const handleSlideChange = (swiper) => {
     setActiveSlide(swiper.activeIndex);
   };
