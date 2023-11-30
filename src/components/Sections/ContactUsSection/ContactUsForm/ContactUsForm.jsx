@@ -32,7 +32,6 @@ const ContactUsForm = () => {
   });
 
   const onSubmit = (values) => {
-    console.log(values);
     const { fullName, email, phone, message } = values;
     reset();
     setFormSubmitted(true);
