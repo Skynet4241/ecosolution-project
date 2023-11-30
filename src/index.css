@@ -43,3 +43,11 @@ button {
   border: none;
   cursor: pointer;
 }
+
+input,
+textarea {
+  font-family: FiraSans-Regular;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}

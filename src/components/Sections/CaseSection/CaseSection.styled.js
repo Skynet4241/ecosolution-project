@@ -129,8 +129,6 @@ export const CustomButtonSVGRight = styled.svg`
   height: 36px;
   fill: transparent;
   stroke: rgba(23, 61, 51, 1);
-  @media screen and (min-width: calc(768px - 0.02px)) {
-  }
 `;
 
 export const CaseSectionSwiper = styled(Swiper)`
@@ -241,6 +239,9 @@ export const SwiperSlideSpan = styled.span`
   margin: 0 auto;
   background-color: #97d28b;
   margin-bottom: -9px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: calc(1280px - 0.02px)) {
     margin-bottom: -20px;
   }
