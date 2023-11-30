@@ -26,7 +26,7 @@ export const FooterButtonWrap = styled.div`
   }
 `;
 
-export const FooterArrowButton = styled.button`
+export const FooterArrowLink = styled.a`
   display: inline-flex;
   transform: rotate(-90deg);
   padding: 8px;

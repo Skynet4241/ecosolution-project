@@ -29,7 +29,7 @@ export const Header = () => {
                 <use href={icons + "#icon-menu"} />
               </BurgerMenuSVG>
             </BurgerMenuButton>
-            <ButtonGet>
+            <ButtonGet href="#contact">
               Get in touch
               <ButtonGetSVG>
                 <use href={icons + "#icon-ellipse"} />

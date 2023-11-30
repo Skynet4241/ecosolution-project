@@ -31,7 +31,7 @@ const MainSection = () => {
                 sources, generating power generation using energy wind, sun,
                 water, biomass
               </MainSectionText>
-              <MainSectionButton>
+              <MainSectionButton href="#case">
                 Learn more
                 <MainSectionButtonSVG>
                   <use href={icons + "#icon-arrow-right"} />

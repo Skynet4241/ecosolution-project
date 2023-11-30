@@ -52,6 +52,16 @@ export const FormButton = styled.button`
   border-radius: 500px;
   border: 1px solid #97d28b;
   margin-left: auto;
+  transition: all 0.2s ease-in;
+  &:hover,
+  &:focus {
+    color: #ee763d;
+    border-color: #ee763d;
+    & > svg {
+      stroke: #fff;
+      background: #ee763d;
+    }
+  }
 `;
 
 export const FormButtonSVG = styled.svg`

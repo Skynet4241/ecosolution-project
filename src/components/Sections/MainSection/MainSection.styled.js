@@ -70,7 +70,7 @@ export const MainSectionText = styled.p`
   }
 `;
 
-export const MainSectionButton = styled.button`
+export const MainSectionButton = styled.a`
   display: inline-flex;
   justify-content: center;
   align-items: center;

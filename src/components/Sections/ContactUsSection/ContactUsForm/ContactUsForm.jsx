@@ -83,14 +83,16 @@ const ContactUsForm = () => {
           )}
         />
       </FormTextAreaBlock>
-      <FormButton type="submit" disabled={!isValid}>
-        Send
-        <FormButtonSVG>
-          <use href={icons + "#icon-arrow-right"} />
-        </FormButtonSVG>
-      </FormButton>
       {isFormSubmitted && (
         <FormSuccessMessage>Form successfully submitted!</FormSuccessMessage>
+      )}
+      {!isFormSubmitted && (
+        <FormButton type="submit" disabled={!isValid}>
+          Send
+          <FormButtonSVG>
+            <use href={icons + "#icon-arrow-right"} />
+          </FormButtonSVG>
+        </FormButton>
       )}
     </FormStyled>
   );

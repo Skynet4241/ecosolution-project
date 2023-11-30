@@ -29,7 +29,7 @@ const BurgerMenu = ({ isOpen }) => {
           <MenuNav>
             <NavList>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#main">
                   Main
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />
@@ -37,7 +37,7 @@ const BurgerMenu = ({ isOpen }) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#about">
                   About
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />
@@ -45,7 +45,7 @@ const BurgerMenu = ({ isOpen }) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#service">
                   Service
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />
@@ -53,7 +53,7 @@ const BurgerMenu = ({ isOpen }) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#case">
                   Cases
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />
@@ -61,7 +61,7 @@ const BurgerMenu = ({ isOpen }) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#faq">
                   FAQ
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />
@@ -69,7 +69,7 @@ const BurgerMenu = ({ isOpen }) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#customers">
                   Customers
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />
@@ -77,7 +77,7 @@ const BurgerMenu = ({ isOpen }) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={isOpen}>
+                <NavLink onClick={isOpen} href="#contact">
                   Contact Us
                   <NavLinkSVG>
                     <use href={icons + "#icon-arrow-right"} />

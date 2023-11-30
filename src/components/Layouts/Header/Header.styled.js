@@ -46,7 +46,7 @@ export const BurgerMenuSVG = styled.svg`
   height: 16px;
 `;
 
-export const ButtonGet = styled.button`
+export const ButtonGet = styled.a`
   display: none;
   @media screen and (min-width: calc(768px - 0.02px)) {
     display: inline-flex;

@@ -1,6 +1,5 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,4 +49,5 @@ textarea {
   font-size: 18px;
   line-height: normal;
   letter-spacing: -0.72px;
+  outline: transparent;
 }

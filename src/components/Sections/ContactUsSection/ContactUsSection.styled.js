@@ -71,6 +71,14 @@ export const ContactUsBlockLink = styled.a`
   font-size: 20px;
   line-height: normal;
   letter-spacing: -0.8px;
+  transition: all 0.2s ease-in;
+  &:hover,
+  &:focus {
+    color: #97d28b;
+    & > svg {
+      stroke: #97d28b;
+    }
+  }
   @media screen and (min-width: calc(1280px - 0.02px)) {
     font-size: 24px;
   }
@@ -84,14 +92,15 @@ export const ContactUsBlock = styled.div`
     width: 244px;
   }
   @media screen and (min-width: calc(1280px - 0.02px)) {
-    width: 466px;
+    width: 475px;
   }
 `;
 
 export const ContactUsBlockSVG = styled.svg`
   fill: transparent;
   stroke: rgba(23, 61, 51, 1);
-  width: 24px;
+  width: 100%;
+  max-width: 24px;
   height: 24px;
   transition: all 0.2s ease-in;
   &:hover,

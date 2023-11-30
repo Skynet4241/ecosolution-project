@@ -1,7 +1,7 @@
 import { Container } from "../../../utils/Container/Container";
 import LogoBlock from "../LogoBlock/LogoBlock";
 import {
-  FooterArrowButton,
+  FooterArrowLink,
   FooterArrowButtonSVG,
   FooterInfoText,
   FooterInfoBlock,
@@ -47,11 +47,11 @@ const Footer = () => {
               </li>
             </FooterSocialList>
             <FooterButtonWrap>
-              <FooterArrowButton>
+              <FooterArrowLink href="#main">
                 <FooterArrowButtonSVG>
                   <use href={icons + "#icon-arrow-right"} />
                 </FooterArrowButtonSVG>
-              </FooterArrowButton>
+              </FooterArrowLink>
             </FooterButtonWrap>
           </FooterLogoWrap>
           <FooterInfoBlock>

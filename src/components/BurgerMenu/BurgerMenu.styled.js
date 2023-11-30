@@ -89,6 +89,7 @@ export const NavList = styled.ul`
   flex-direction: column;
   gap: 8px;
 `;
+
 export const NavLink = styled.a`
   display: inline-flex;
   align-items: center;

@@ -29,7 +29,7 @@ const FaqSection = () => {
               <FaqSectionFooterTitle>
                 Didn`t find the answer to your question?
               </FaqSectionFooterTitle>
-              <FaqSectionButton>
+              <FaqSectionButton href="#contact">
                 Contact Us
                 <FaqSectionButtonSVG>
                   <use href={icons + "#icon-ellipse"} />
@@ -42,7 +42,7 @@ const FaqSection = () => {
             <FaqSectionFooterTitle>
               Didn`t find the answer to your question?
             </FaqSectionFooterTitle>
-            <FaqSectionButton>
+            <FaqSectionButton href="#contact">
               Contact Us
               <FaqSectionButtonSVG>
                 <use href={icons + "#icon-ellipse"} />

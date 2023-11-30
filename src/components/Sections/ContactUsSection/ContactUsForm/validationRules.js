@@ -1,11 +1,8 @@
 const validateName = (value) => {
-  const isNonWhiteSpace = /^\S*$/;
-  if (!isNonWhiteSpace.test(value)) {
-    return "Не повинно мати пробілів";
-  }
-  const allowedSymbols = /^[a-zA-ZА-Яа-я0-9!@#*+=$%^&_-~?]+$/;
+  const allowedSymbols = /^[a-zA-ZА-Яа-я0-9 !@#*+=$%^&_-~?]+$/;
+
   if (!allowedSymbols.test(value)) {
-    return "Містить недозволені символи";
+    return "Contains unauthorized characters";
   }
   return true;
 };
@@ -13,32 +10,36 @@ const validateName = (value) => {
 const validateEmail = (value) => {
   const isNonWhiteSpace = /^\S*$/;
   if (!isNonWhiteSpace.test(value)) {
-    return "Не повинна мати пробілів";
+    return "Must not have spaces";
   }
 
   const allowedSymbols = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (!allowedSymbols.test(value)) {
-    return "Невірний формат пошти";
+    return "Incorrect e-mail format";
   }
 };
 
-const validatePassword = (value) => {
+const validatePhoneNumber = (value) => {
+  const phoneNumberWithoutSpaces = value.replace(/\s/g, "");
+
   const isNonWhiteSpace = /^\S*$/;
   if (!isNonWhiteSpace.test(value)) {
-    return "Не повинен мати пробілів";
+    return "Must not have spaces";
   }
-  const isContainsSymbol = /[!@#$%^&-*_+=?]+/;
-  if (!isContainsSymbol.test(value)) {
-    return "Повинен мати хоча б 1 символ";
+  const allowedSymbols = /^[\d\-\+]+$/;
+  if (!allowedSymbols.test(phoneNumberWithoutSpaces)) {
+    return "Invalid phone number format";
   }
-  const isContainsUppercase = /^(?=.*[A-Z]).*$/;
-  if (!isContainsUppercase.test(value)) {
-    return "Повинен мати хоча б 1 велику літеру";
+
+  const minLength = 5;
+  const maxLength = 15;
+  if (
+    phoneNumberWithoutSpaces.length < minLength ||
+    phoneNumberWithoutSpaces.length > maxLength
+  ) {
+    return `Phone number must be between ${minLength} and ${maxLength} characters`;
   }
-  const isContainsNumber = /^(?=.*[0-9]).*$/;
-  if (!isContainsNumber.test(value)) {
-    return "Повинен мати хоча б 1 цифру";
-  }
+
   return true;
 };
 
@@ -77,18 +78,6 @@ export const validationRules = {
       value: 12,
       message: "Max length is 12",
     },
-    validate: { validateName },
-  },
-  message: {
-    required: "Message is required",
-    minLength: {
-      value: 4,
-      message: "Minimum length is 4",
-    },
-    maxLength: {
-      value: 1000,
-      message: "Max length is 1000",
-    },
-    validate: { validateName },
+    validate: { validatePhoneNumber },
   },
 };

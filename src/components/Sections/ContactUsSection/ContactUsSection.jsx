@@ -55,7 +55,11 @@ const ContactUsSection = () => {
             </div>
             <div>
               <ContactUsBlockTitle>Address:</ContactUsBlockTitle>
-              <ContactUsBlockLink href="">
+              <ContactUsBlockLink
+                href="https://maps.app.goo.gl/rHGepHx6RRz6Mmw97"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ContactUsBlockSVG>
                   <use href={icons + "#icon-map"} />
                 </ContactUsBlockSVG>

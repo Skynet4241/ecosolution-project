@@ -103,7 +103,7 @@ export const FaqSectionFooterTitle = styled.h5`
   }
 `;
 
-export const FaqSectionButton = styled.button`
+export const FaqSectionButton = styled.a`
   display: inline-flex;
   padding: 10px 16px;
   justify-content: center;
