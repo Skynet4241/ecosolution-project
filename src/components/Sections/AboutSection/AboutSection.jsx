@@ -36,7 +36,7 @@ import KeyPrinciplesImgTwo from "../../../assets/images/key-principles-2.png";
 
 const AboutSection = () => {
   return (
-    <AboutSectionStyled>
+    <AboutSectionStyled id="about">
       <Container>
         <AboutSectionWrap>
           <AboutCompanyBlock>

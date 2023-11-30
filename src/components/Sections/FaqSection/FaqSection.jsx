@@ -17,7 +17,7 @@ import icons from "../../../assets/icons/icons.svg";
 
 const FaqSection = () => {
   return (
-    <FaqSectionStyled>
+    <FaqSectionStyled id="faq">
       <Container>
         <FaqSectionContainer>
           <FaqSectionWrap>

@@ -5,11 +5,19 @@ export const ContactUsSectionStyled = styled.div`
   @media screen and (min-width: calc(768px - 0.02px)) {
     padding-bottom: 100px;
   }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    padding-bottom: 120px;
+  }
 `;
+
 export const ContactUsSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const ContactUsSectionTitle = styled.h2`
@@ -19,14 +27,16 @@ export const ContactUsSectionTitle = styled.h2`
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-
+  margin-bottom: 24px;
   @media screen and (min-width: calc(768px - 0.02px)) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: calc(1280px - 0.02px)) {
     font-size: 48px;
     line-height: 48px;
+    margin-bottom: 120px;
   }
 `;
 
@@ -36,7 +46,7 @@ export const ContactUsPhoneBlock = styled.div`
 `;
 
 export const ContactUsBlockTitle = styled.p`
-  color: #97d28b;
+  color: #173d33;
   text-align: justify;
   font-family: FiraSans-Regular;
   font-size: 16px;
@@ -61,12 +71,21 @@ export const ContactUsBlockLink = styled.a`
   font-size: 20px;
   line-height: normal;
   letter-spacing: -0.8px;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    font-size: 24px;
+  }
 `;
 
 export const ContactUsBlock = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    width: 244px;
+  }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    width: 466px;
+  }
 `;
 
 export const ContactUsBlockSVG = styled.svg`
@@ -92,6 +111,7 @@ export const ContactUsBlockSocSVG = styled.svg`
   &:hover,
   &:focus {
     stroke: #97d28b;
+    fill: transparent;
   }
   @media screen and (min-width: calc(768px - 0.02px)) {
   }
@@ -108,6 +128,7 @@ export const ContactUsBlockList = styled.ul`
 export const ContactUsBlockSocLink = styled.a`
   display: block;
   padding: 12px;
-  li:last-child ${ContactUsBlockSVG} {
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    padding: 0;
   }
 `;

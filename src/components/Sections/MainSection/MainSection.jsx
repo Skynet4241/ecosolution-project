@@ -20,7 +20,7 @@ import SectionImage from "../../../assets/images/hero-img.png";
 
 const MainSection = () => {
   return (
-    <MainSectionStyled>
+    <MainSectionStyled id="main">
       <Container>
         <MainSectionWrap>
           <MainSectionBlockInfo>

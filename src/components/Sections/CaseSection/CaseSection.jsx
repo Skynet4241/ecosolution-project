@@ -108,7 +108,7 @@ const CaseSection = () => {
   };
 
   return (
-    <CaseSectionStyled>
+    <CaseSectionStyled id="case">
       <Container>
         <CaseSectionWrap>
           <CaseSectionHeader>

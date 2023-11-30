@@ -5,6 +5,9 @@ export const MainSectionStyled = styled.div`
   @media screen and (min-width: calc(768px - 0.02px)) {
     padding-bottom: 100px;
   }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    padding-bottom: 120px;
+  }
 `;
 
 export const MainSectionWrap = styled.div`

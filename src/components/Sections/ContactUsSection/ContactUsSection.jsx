@@ -18,7 +18,7 @@ import ContactUsForm from "./ContactUsForm/ContactUsForm";
 
 const ContactUsSection = () => {
   return (
-    <ContactUsSectionStyled>
+    <ContactUsSectionStyled id="contact">
       <Container>
         <ContactUsSectionTitle>Contact us</ContactUsSectionTitle>
         <ContactUsSectionWrap>

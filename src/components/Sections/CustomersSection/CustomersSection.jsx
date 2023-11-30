@@ -15,7 +15,7 @@ import DnimroM from "../../../assets/images/dnipro-m.png";
 
 const CustomersSection = () => {
   return (
-    <CustomersSectionStyled>
+    <CustomersSectionStyled id="customers">
       <Container>
         <CustomersSectionWrap>
           <CustomersSectionTitle>our satisfied customers</CustomersSectionTitle>

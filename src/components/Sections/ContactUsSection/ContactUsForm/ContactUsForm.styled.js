@@ -4,9 +4,17 @@ export const FormStyled = styled.form`
   display: flex;
   flex-direction: column;
   gap: 28px;
-  height: 560px;
+  height: 580px;
   background-color: #eaedf1;
   padding: 36px 12px;
+  box-sizing: border-box;
+  @media screen and (min-width: calc(768px - 0.02px)) {
+    width: calc(100% / 2);
+  }
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    padding: 48px;
+    height: 605px;
+  }
 `;
 
 export const FormTextAreaBlock = styled.div`

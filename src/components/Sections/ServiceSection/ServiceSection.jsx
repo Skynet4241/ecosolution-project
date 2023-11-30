@@ -29,7 +29,7 @@ const ServiceSection = () => {
   const formattedNumber = numberWithDots(number);
 
   return (
-    <ServiceSectionStyled>
+    <ServiceSectionStyled id="service">
       <Container>
         <ServiceSectionWrap>
           <ServiceSectionTitle>
