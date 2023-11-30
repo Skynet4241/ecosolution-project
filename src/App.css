@@ -48,9 +48,16 @@
 
 .swiper-pagination {
   display: flex;
-  margin-left: -75px !important;
   position: relative !important;
+}
 
+@media screen and (min-width: calc(768px - 0.02px)) {
+  .swiper-pagination {
+    display: flex;
+    margin-left: -75px !important;
+    position: relative !important;
+
+  }
 }
 
 .swiper-pagination span {

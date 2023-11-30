@@ -57,7 +57,7 @@ export const CaseSectionGreenLine = styled.span`
   @media screen and (min-width: calc(768px - 0.02px)) {
     display: block;
     width: 1px;
-    height: 65px;
+    height: auto;
     background-color: #97d28b;
     margin-right: 5px;
   }
