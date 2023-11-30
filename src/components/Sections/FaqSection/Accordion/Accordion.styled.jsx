@@ -28,28 +28,20 @@ export const AccordionSummary = styled(
   (props) => (
     <MuiAccordionSummary
       expandIcon={
-        props.isExpanded ? (
-          <svg
-            style={{
-              width: "16px",
-              height: "16px",
-              fill: "rgba(151, 210, 139, 1)",
-              stroke: "rgba(23, 61, 51, 1)",
-            }}
-          >
+        <svg
+          style={{
+            width: "16px",
+            height: "16px",
+            fill: "rgba(151, 210, 139, 1)",
+            stroke: "rgba(23, 61, 51, 1)",
+          }}
+        >
+          {!props.id ? (
             <use href={icons + "#icon-add"} />
-          </svg>
-        ) : (
-          <svg
-            style={{
-              width: "16px",
-              height: "16px",
-              stroke: "rgba(23, 61, 51, 1)",
-            }}
-          >
+          ) : (
             <use href={icons + "#icon-minus"} />
-          </svg>
-        )
+          )}
+        </svg>
       }
       {...props}
       sx={{ padding: "0" }}

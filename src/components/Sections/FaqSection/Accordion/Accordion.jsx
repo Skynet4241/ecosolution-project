@@ -56,8 +56,7 @@ const CustomizedAccordions = () => {
         >
           <AccordionSummary
             aria-controls="panel1d-content"
-            id="panel1d-header"
-            isExpanded={isExpanded}
+            id={expanded === `panel${index}` ? "true" : null}
           >
             <SummaryTitle>{item.title}</SummaryTitle>
           </AccordionSummary>
