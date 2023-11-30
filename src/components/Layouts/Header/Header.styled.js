@@ -8,6 +8,9 @@ export const HeaderStyled = styled.header.withConfig({
   width: 100%;
   background-color: ${(props) => (props.isScrolled ? "#fff" : "#f3f5fa")};
   z-index: 11;
+  @media screen and (min-width: calc(1280px - 0.02px)) {
+    padding: 24px 0;
+  }
 `;
 
 export const HeaderWrap = styled.div`
