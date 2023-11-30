@@ -16,13 +16,19 @@ import {
   SwiperSlideText,
   SwiperSlideTextBlock,
   SwiperSlideInfoTitleBlock,
+  CaseSectionHeader,
+  CustomPaginationSpan,
+  CaseSectionGreenLine,
+  SwiperSlideImg,
+  CaseSectionSwiperSlide,
 } from "./CaseSection.styled";
 import icons from "../../../assets/icons/icons.svg";
-import { SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import SlideOne from "../../../assets/images/swiper-slide-1.png";
 import CustomButtons from "./CustomButton";
+import { useMediaQuery } from "react-responsive";
+import SlideOne from "../../../assets/images/swiper-slide-1.png";
+import SlideTwo from "../../../assets/images/swiper-slide-2.png";
 
 const swiperSourcesData = [
   {
@@ -33,11 +39,11 @@ const swiperSourcesData = [
     date: "July 2023",
   },
   {
-    title: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
-    image: SlideOne,
-    alt: "Panoramic view of the field where the solar panels are located",
-    description: "Wind Power for auto field irrigation",
-    date: "July 2023",
+    title: "Zhytomyr city Private Enterprise “Bosch”",
+    image: SlideTwo,
+    alt: "Beautiful view wind turbines grass covered field captured holland",
+    description: "Solar Panels for industrial use",
+    date: "November 2023",
   },
   {
     title: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
@@ -45,6 +51,13 @@ const swiperSourcesData = [
     alt: "Panoramic view of the field where the solar panels are located",
     description: "Wind Power for auto field irrigation",
     date: "July 2023",
+  },
+  {
+    title: "Zhytomyr city Private Enterprise “Bosch”",
+    image: SlideTwo,
+    alt: "Beautiful view wind turbines grass covered field captured holland",
+    description: "Solar Panels for industrial use",
+    date: "November 2023",
   },
   {
     title: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
@@ -59,6 +72,34 @@ const CaseSection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
 
+  const isMobile = useMediaQuery({
+    query: "(max-width: calc(768px - 0.02px)",
+  });
+  const isTablet = useMediaQuery({
+    query: "(max-width: calc(1280px - 0.02px) ",
+  });
+
+  const isDesktop = useMediaQuery({
+    query: "(min-width: calc(1280px - 0.02px)",
+  });
+
+  let slidesPerView;
+
+  switch (true) {
+    case isMobile:
+      slidesPerView = 1;
+      break;
+    case isTablet:
+      slidesPerView = 2;
+      break;
+    case isDesktop:
+      slidesPerView = 2.2;
+      break;
+    default:
+      slidesPerView = 1;
+  }
+
+  console.log(slidesPerView);
   const handleSlideChange = (swiper) => {
     setActiveSlide(swiper.activeIndex);
   };
@@ -71,13 +112,19 @@ const CaseSection = () => {
     <CaseSectionStyled>
       <Container>
         <CaseSectionWrap>
-          <CaseSectionTitle>Successful cases of our company</CaseSectionTitle>
-          <CaseSectionCustomElWrap>
-            <CustomPagination className="pagination">
-              {`${activeSlide + 1}/${totalSlides}`}
-            </CustomPagination>
-            <CustomButtons />
-          </CaseSectionCustomElWrap>
+          <CaseSectionHeader>
+            <CaseSectionTitle>Successful cases of our company</CaseSectionTitle>
+            <CaseSectionGreenLine></CaseSectionGreenLine>
+            <CaseSectionCustomElWrap>
+              <CustomPagination className="pagination">
+                <CustomPaginationSpan>{`${
+                  activeSlide + 1
+                }`}</CustomPaginationSpan>{" "}
+                / {`${totalSlides}`}
+              </CustomPagination>
+              <CustomButtons />
+            </CaseSectionCustomElWrap>
+          </CaseSectionHeader>
           <CaseSectionSwiper
             modules={[Navigation]}
             navigation={{
@@ -92,15 +139,15 @@ const CaseSection = () => {
               },
             }}
             loop={true}
-            spaceBetween={50}
-            slidesPerView={1}
+            spaceBetween={24}
+            slidesPerView={slidesPerView}
             onSlideChange={handleSlideChange}
             onSwiper={handleSwiperUpdate}
           >
             {swiperSourcesData.map((item, index) => (
-              <SwiperSlide key={index}>
+              <CaseSectionSwiperSlide key={index}>
                 <SwiperSlideBlock>
-                  <img src={item.image} alt={item.alt} />
+                  <SwiperSlideImg src={item.image} alt={item.alt} />
                   <SwiperSlideInfoBlock>
                     <SwiperSlideInfoTitleBlock>
                       <SwiperSlideInfoBlockTitle>
@@ -119,7 +166,7 @@ const CaseSection = () => {
                     </SwiperSlideTextBlock>
                   </SwiperSlideInfoBlock>
                 </SwiperSlideBlock>
-              </SwiperSlide>
+              </CaseSectionSwiperSlide>
             ))}
           </CaseSectionSwiper>
         </CaseSectionWrap>
