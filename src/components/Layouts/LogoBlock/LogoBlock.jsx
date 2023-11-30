@@ -1,6 +1,7 @@
 import {
   Logo,
   LogoBlockStyled,
+  LogoLink,
   LogoText,
   Slogan,
   SloganSpan,
@@ -10,10 +11,12 @@ import icons from "../../../assets/icons/icons.svg";
 const LogoBlock = () => {
   return (
     <LogoBlockStyled>
-      <Logo>
-        <use href={icons + "#icon-logo"} />
-      </Logo>
-      <LogoText>ecosolution</LogoText>
+      <LogoLink href="#">
+        <Logo>
+          <use href={icons + "#icon-logo"} />
+        </Logo>
+        <LogoText>ecosolution</LogoText>
+      </LogoLink>
       <Slogan>
         <SloganSpan>green</SloganSpan>ergy for life
       </Slogan>

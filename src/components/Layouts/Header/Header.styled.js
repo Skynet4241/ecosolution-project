@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
+export const HeaderStyled = styled.header.withConfig({
+  shouldForwardProp: (prop) => prop !== "isScrolled",
+})`
   padding: 36px 0;
   position: fixed;
   width: 100%;
-  background-color: #f3f5fa;
+  background-color: ${(props) => (props.isScrolled ? "#fff" : "#f3f5fa")};
   z-index: 11;
 `;
 

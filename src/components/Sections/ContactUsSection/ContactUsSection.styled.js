@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContactUsSectionStyled = styled.div`
-  padding-bottom: 36px;
+  padding: 36px 0;
   @media screen and (min-width: calc(768px - 0.02px)) {
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
   @media screen and (min-width: calc(1280px - 0.02px)) {
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 `;
 

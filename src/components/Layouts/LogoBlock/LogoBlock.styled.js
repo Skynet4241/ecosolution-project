@@ -7,6 +7,12 @@ export const LogoBlockStyled = styled.div`
   width: 288px;
 `;
 
+export const LogoLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+`;
+
 export const Logo = styled.svg`
   width: 31px;
   height: 18px;

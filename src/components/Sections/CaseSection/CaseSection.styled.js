@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const CaseSectionStyled = styled.div`
-  padding-bottom: 36px;
+  padding-top: 36px;
   @media screen and (min-width: calc(768px - 0.02px)) {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
   @media screen and (min-width: calc(1280px - 0.02px)) {
-    padding-bottom: 120px;
+    padding-top: 120px;
   }
 `;
 

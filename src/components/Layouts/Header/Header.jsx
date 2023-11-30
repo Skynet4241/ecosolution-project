@@ -9,17 +9,31 @@ import {
 } from "./Header.styled";
 import icons from "../../../assets/icons/icons.svg";
 import { Container } from "../../../utils/Container/Container";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BurgerMenu from "../../BurgerMenu/BurgerMenu";
 import LogoBlock from "../LogoBlock/LogoBlock";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const ButtonMenuHandler = () => setIsMenuOpen((pS) => !pS);
 
+  const handleScroll = () => {
+    const scrolled = window.scrollY > 0;
+    setIsScrolled(scrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderStyled>
+    <HeaderStyled isScrolled={isScrolled}>
       <Container>
         <HeaderWrap>
           <LogoBlock />

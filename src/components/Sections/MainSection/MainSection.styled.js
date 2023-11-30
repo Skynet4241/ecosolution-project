@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
 export const MainSectionStyled = styled.div`
-  padding: 222px 0 24px;
-  @media screen and (min-width: calc(768px - 0.02px)) {
-    padding-bottom: 100px;
-  }
-  @media screen and (min-width: calc(1280px - 0.02px)) {
-    padding-bottom: 120px;
-  }
+  padding: 222px 0 0;
 `;
 
 export const MainSectionWrap = styled.div`
