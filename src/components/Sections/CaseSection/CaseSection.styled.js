@@ -66,9 +66,10 @@ export const CaseSectionGreenLine = styled.span`
   }
 `;
 export const CaseSectionCustomElWrap = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   @media screen and (min-width: calc(768px - 0.02px)) {
     flex-grow: 1;
     max-width: 260px;
@@ -80,15 +81,6 @@ export const CaseSectionCustomElWrap = styled.div`
 
 export const CustomPagination = styled.p`
   color: rgba(23, 61, 51, 0.25);
-  font-family: FiraSans-Regular;
-  font-size: 28px;
-  line-height: normal;
-  letter-spacing: -1.12px;
-`;
-
-export const CustomPaginationSpan = styled.span`
-  color: #173d33;
-  text-align: justify;
   font-family: FiraSans-Regular;
   font-size: 28px;
   line-height: normal;

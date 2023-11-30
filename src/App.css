@@ -45,3 +45,32 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.swiper-pagination {
+  display: flex;
+  margin-left: -75px !important;
+  position: relative !important;
+
+}
+
+.swiper-pagination span {
+  margin: 0 4px;
+}
+
+.swiper-pagination-current {
+  color: #173d33 !important;
+  text-align: justify !important;
+  font-family: FiraSans-Regular !important;
+  font-size: 28px !important;
+  line-height: normal !important;
+  letter-spacing: -1.12px !important;
+}
+
+.swiper-pagination-total,
+.span-between {
+  color: rgba(23, 61, 51, 0.25) !important;
+  font-family: FiraSans-Regular !important;
+  font-size: 28px !important;
+  line-height: normal !important;
+  letter-spacing: -1.12px !important;
+}

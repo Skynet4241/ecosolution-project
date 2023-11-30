@@ -1,5 +1,4 @@
 import { Container } from "../../../utils/Container/Container";
-import { useState } from "react";
 import {
   CaseSectionStyled,
   CaseSectionSwiper,
@@ -17,14 +16,16 @@ import {
   SwiperSlideTextBlock,
   SwiperSlideInfoTitleBlock,
   CaseSectionHeader,
-  CustomPaginationSpan,
   CaseSectionGreenLine,
   SwiperSlideImg,
   CaseSectionSwiperSlide,
 } from "./CaseSection.styled";
 import icons from "../../../assets/icons/icons.svg";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import CustomButtons from "./CustomButton";
 import { useMediaQuery } from "react-responsive";
 import SlideOne from "../../../assets/images/swiper-slide-1.png";
@@ -69,9 +70,6 @@ const swiperSourcesData = [
 ];
 
 const CaseSection = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [totalSlides, setTotalSlides] = useState(0);
-
   const isMobile = useMediaQuery({
     query: "(max-width: calc(768px - 0.02px)",
   });
@@ -99,14 +97,6 @@ const CaseSection = () => {
       slidesPerView = 1;
   }
 
-  const handleSlideChange = (swiper) => {
-    setActiveSlide(swiper.activeIndex);
-  };
-
-  const handleSwiperUpdate = (swiper) => {
-    setTotalSlides(swiper.slides.length);
-  };
-
   return (
     <CaseSectionStyled id="case">
       <Container>
@@ -115,33 +105,35 @@ const CaseSection = () => {
             <CaseSectionTitle>Successful cases of our company</CaseSectionTitle>
             <CaseSectionGreenLine></CaseSectionGreenLine>
             <CaseSectionCustomElWrap>
-              <CustomPagination className="pagination">
-                <CustomPaginationSpan>{`${
-                  activeSlide + 1
-                }`}</CustomPaginationSpan>{" "}
-                / {`${totalSlides}`}
-              </CustomPagination>
+              <CustomPagination className="swiper-pagination"></CustomPagination>
               <CustomButtons />
             </CaseSectionCustomElWrap>
           </CaseSectionHeader>
           <CaseSectionSwiper
-            modules={[Navigation]}
+            modules={[Pagination, Navigation]}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
             pagination={{
-              el: ".pagination",
+              el: ".swiper-pagination",
+              type: "fraction",
               clickable: true,
-              renderBullet: function (index, pagination) {
-                return `<span class="${pagination}">${index + 1}</span>`;
+              renderFraction: function (currentClass, totalClass) {
+                return (
+                  '<span class="' +
+                  currentClass +
+                  '"></span>' +
+                  " <span class='span-between'>/</span> " +
+                  '<span class="' +
+                  totalClass +
+                  '"></span>'
+                );
               },
             }}
             loop={true}
             spaceBetween={24}
             slidesPerView={slidesPerView}
-            onSlideChange={handleSlideChange}
-            onSwiper={handleSwiperUpdate}
           >
             {swiperSourcesData.map((item, index) => (
               <CaseSectionSwiperSlide key={index}>
